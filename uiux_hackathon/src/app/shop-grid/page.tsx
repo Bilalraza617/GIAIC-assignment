@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import Brands from '../../../public/brands.jpg'
+import ShopHero from '@/components/ShopHero'
 
 const ShopGrid = () => {
     const productList = [
@@ -49,12 +50,7 @@ const ShopGrid = () => {
     ];
     return (
         <>
-            <div className='bg-gray-100 h-80 flex flex-col items-center justify-center'>
-                <div className='w-[60%]'>
-                    <h1 className='text-4xl font-extrabold text-[#101750]' style={{ fontWeight: '800' }}>Sop Grid Default</h1>
-                    <p className='text-black'>Home . Pages <span className='text-[#FB2E86]'>. Shop Grid Default</span></p>
-                </div>
-            </div>
+            <ShopHero title="Shop Grid Default" />
 
             <div className='bg-white flex items-center justify-between w-[60%] m-auto mt-40'>
                 <div>

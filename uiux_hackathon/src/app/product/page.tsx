@@ -91,16 +91,16 @@ const ProductDetail = () => {
                         <h2 className='text-navyBlue text-2xl font-bold'>Video</h2>
                     </div>
                 </div>
-                <div className='w-[60%]'>
+                <div className='w-[60%] mt-20'>
                     <h2 className='text-navyBlue text-2xl font-semibold'>Additional Info</h2>
-                    <p>
+                    <p className='text-gray-400'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quae optio doloremque, laudantium omnis sapiente laboriosam deserunt odit quisquam, rem molestiae quo ipsam, qui eos id ratione porro quia accusantium.
                         Beatae cumque maiores blanditiis, sed perferendis amet error vero expedita ad culpa accusantium itaque ipsam possimus totam consequuntur quos mollitia dolores facere ut nulla iusto explicabo? Nam nulla voluptates tenetur!
                         Alias, modi, minus laborum, inventore aut quae aperiam consequatur possimus ipsa animi obcaecati ratione. Dolorem enim sint unde aliquam eius officiis animi consectetur, distinctio deserunt pariatur omnis dolore ea perferendis?
 
                     </p>
-                    <h2 className='text-navyBlue text-2xl font-semibold'>More details</h2>
-                    <p>
+                    <h2 className='text-navyBlue text-2xl font-semibold mt-10'>More details</h2>
+                    <p className='text-gray-400'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quae optio doloremque, laudantium omnis sapiente laboriosam deserunt odit quisquam, rem molestiae quo ipsam, qui eos id ratione porro quia accusantium.
                         Beatae cumque maiores blanditiis, sed perferendis amet error vero expedita ad culpa accusantium itaque ipsam possimus totam consequuntur quos mollitia dolores facere ut nulla iusto explicabo? Nam nulla voluptates tenetur!
                         Alias, modi, minus laborum, inventore aut quae aperiam consequatur possimus ipsa animi obcaecati ratione. Dolorem enim sint unde aliquam eius officiis animi consectetur, distinctio deserunt pariatur omnis dolore ea perferendis?

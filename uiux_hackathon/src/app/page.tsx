@@ -1,5 +1,7 @@
+import LatestBlog from "@/components/LatestBlog";
 import LatestProduct from "@/components/LatestProduct";
 import ProductCard from "@/components/ProductCard";
+import Shopex from "@/components/Shopex";
 import Image from "next/image";
 
 export default function Home() {
@@ -44,6 +46,8 @@ export default function Home() {
       </div>
       <ProductCard />
       <LatestProduct />
+      <Shopex />
+      <LatestBlog />
     </div>
   );
 }

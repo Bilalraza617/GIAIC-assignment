@@ -2,12 +2,12 @@ import Image from "next/image";
 import React from "react";
 
 const item = [
-  { image: "1" },
-  { image: "2" },
-  { image: "3" },
-  { image: "4" },
-  { image: "5" },
-  { image: "6" },
+  { image: "L1" },
+  { image: "L2" },
+  { image: "L3" },
+  { image: "L4" },
+  { image: "L5" },
+  { image: "L6" },
 ];
 
 const LatestProducts = () => (

@@ -1,8 +1,12 @@
 import Baner from "@/components/Baner";
+import Banner2 from "@/components/Banner2";
+import DiscountItem from "@/components/DiscountItem";
 import LatestBlog from "@/components/LatestBlog";
 import LatestProduct from "@/components/LatestProduct";
 import ProductCard from "@/components/ProductCard";
 import Shopex from "@/components/Shopex";
+import TopCategories from "@/components/TopCatefories";
+import Trandingproducts from "@/components/TrandindPraducts";
 import Image from "next/image";
 
 export default function Home() {
@@ -48,8 +52,13 @@ export default function Home() {
       <ProductCard />
       <LatestProduct />
       <Shopex />
-      <LatestBlog />
       <Baner />
+      <Trandingproducts />
+      <DiscountItem />
+      <TopCategories />
+      <Banner2 />
+
+      <LatestBlog />
     </div>
   );
 }

@@ -108,7 +108,7 @@ const ShopList = () => {
                             </p>
                             <p className='text-gray-400'>{item.description}</p>
                             <div className="flex gap-5">
-                                <IconZoomCancel />
+                                {/* <IconZoomCancel /> */}
                             </div>
                         </div>
                     </Link>

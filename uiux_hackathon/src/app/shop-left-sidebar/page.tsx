@@ -5,7 +5,7 @@ import ShopHero from '@/components/ShopHero'
 import Brands from '@/components/Brands'
 import FilterSidebar from '@/components/FilterAside'
 
-const ShopList = () => {
+const ShopLeftSidebar = () => {
     const productList = [
         {
             link: "#",
@@ -123,4 +123,4 @@ const ShopList = () => {
     )
 }
 
-export default ShopList
+export default ShopLeftSidebar

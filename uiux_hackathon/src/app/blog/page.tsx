@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 const Blog = () => {
   return (
@@ -13,9 +14,11 @@ const Blog = () => {
         <div className="w-3/4">
           <div className="post mb-8">
             <Image
-              src="/images/image1.jpg"
+              src="/p1.png"
               alt="Post 1"
               className="w-full h-auto mb-4"
+              width={300}
+              height={300}
             />
             <div className="post-info p-4 bg-white shadow rounded">
               <h2 className="text-2xl font-bold mb-2">
@@ -25,19 +28,21 @@ const Blog = () => {
               <p className="text-gray-700">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit...
               </p>
-              <a
+              <Link
                 href="#"
                 className="text-blue-500 hover:underline mt-2 inline-block"
               >
                 Read More
-              </a>
+              </Link>
             </div>
           </div>
           <div className="post mb-8">
-            <img
-              src="/images/image2.jpg"
+            <Image
+              src="/p1.png"
               alt="Post 2"
               className="w-full h-auto mb-4"
+              width={300}
+              height={300}
             />
             <div className="post-info p-4 bg-white shadow rounded">
               <h2 className="text-2xl font-bold mb-2">
@@ -47,19 +52,21 @@ const Blog = () => {
               <p className="text-gray-700">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit...
               </p>
-              <a
+              <Link
                 href="#"
                 className="text-blue-500 hover:underline mt-2 inline-block"
               >
                 Read More
-              </a>
+              </Link>
             </div>
           </div>
           <div className="post mb-8">
-            <img
-              src="/images/image3.jpg"
+            <Image
+              src="/p1.png"
               alt="Post 3"
               className="w-full h-auto mb-4"
+              width={300}
+              height={300}
             />
             <div className="post-info p-4 bg-white shadow rounded">
               <h2 className="text-2xl font-bold mb-2">
@@ -69,12 +76,12 @@ const Blog = () => {
               <p className="text-gray-700">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit...
               </p>
-              <a
+              <Link
                 href="#"
                 className="text-blue-500 hover:underline mt-2 inline-block"
               >
                 Read More
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -92,19 +99,19 @@ const Blog = () => {
             <h3 className="text-xl font-bold mb-4">Categories</h3>
             <ul className="list-disc pl-5">
               <li>
-                <a href="#" className="text-blue-500 hover:underline">
+                <Link href="#" className="text-blue-500 hover:underline">
                   Fashion
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-blue-500 hover:underline">
+                <Link href="#" className="text-blue-500 hover:underline">
                   Women
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-blue-500 hover:underline">
+                <Link href="#" className="text-blue-500 hover:underline">
                   Winter
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -112,19 +119,19 @@ const Blog = () => {
             <h3 className="text-xl font-bold mb-4">Recent Post</h3>
             <ul className="list-disc pl-5">
               <li>
-                <a href="#" className="text-blue-500 hover:underline">
+                <Link href="#" className="text-blue-500 hover:underline">
                   Post 1
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-blue-500 hover:underline">
+                <Link href="#" className="text-blue-500 hover:underline">
                   Post 2
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-blue-500 hover:underline">
+                <Link href="#" className="text-blue-500 hover:underline">
                   Post 3
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -132,14 +139,14 @@ const Blog = () => {
             <h3 className="text-xl font-bold mb-4">Sale Product</h3>
             <ul className="list-disc pl-5">
               <li>
-                <a href="#" className="text-blue-500 hover:underline">
+                <Link href="#" className="text-blue-500 hover:underline">
                   Product 1
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-blue-500 hover:underline">
+                <Link href="#" className="text-blue-500 hover:underline">
                   Product 2
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -147,14 +154,14 @@ const Blog = () => {
             <h3 className="text-xl font-bold mb-4">Offer product</h3>
             <ul className="list-disc pl-5">
               <li>
-                <a href="#" className="text-blue-500 hover:underline">
+                <Link href="#" className="text-blue-500 hover:underline">
                   Product 1
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-blue-500 hover:underline">
+                <Link href="#" className="text-blue-500 hover:underline">
                   Product 2
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -162,19 +169,19 @@ const Blog = () => {
             <h3 className="text-xl font-bold mb-4">Tags</h3>
             <ul className="list-disc pl-5">
               <li>
-                <a href="#" className="text-blue-500 hover:underline">
+                <Link href="#" className="text-blue-500 hover:underline">
                   General
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-blue-500 hover:underline">
+                <Link href="#" className="text-blue-500 hover:underline">
                   Atsenal
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-blue-500 hover:underline">
+                <Link href="#" className="text-blue-500 hover:underline">
                   Nobis
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

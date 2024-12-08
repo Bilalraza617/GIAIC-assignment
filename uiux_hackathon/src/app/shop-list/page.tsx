@@ -4,7 +4,7 @@ import React from 'react'
 import ShopHero from '@/components/ShopHero'
 import Brands from '@/components/Brands'
 
-const ShopGrid = () => {
+const ShopList = () => {
     const productList = [
         {
             link: "#",
@@ -12,6 +12,7 @@ const ShopGrid = () => {
             name: "Vel elit euismod",
             variant: ["#4e4e4e", "#fb2e86", "#f8fb2e"],
             price: 25.00,
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sequi fugit reprehenderit repellat ullam accusamus placeat, ipsa quam impedit commodi, eaque harum id.",
             cutPrice: 45.00,
         },
         // Add more products to test the wrapping
@@ -21,6 +22,7 @@ const ShopGrid = () => {
             name: "Consectetur adipiscing",
             variant: ["#fbb034", "#02b3e4", "#f8fb2e"],
             price: 30.00,
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sequi fugit reprehenderit repellat ullam accusamus placeat, ipsa quam impedit commodi, eaque harum id.",
             cutPrice: 50.00,
         },
         {
@@ -29,6 +31,7 @@ const ShopGrid = () => {
             name: "Lorem ipsum dolor",
             variant: ["#ec407a", "#8e24aa", "#03a9f4"],
             price: 20.00,
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sequi fugit reprehenderit repellat ullam accusamus placeat, ipsa quam impedit commodi, eaque harum id.",
             cutPrice: 40.00,
         },
         {
@@ -37,6 +40,7 @@ const ShopGrid = () => {
             name: "Sit amet consectetur",
             variant: ["#4caf50", "#ff9800", "#607d8b"],
             price: 35.00,
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sequi fugit reprehenderit repellat ullam accusamus placeat, ipsa quam impedit commodi, eaque harum id.",
             cutPrice: 55.00,
         },
         {
@@ -45,12 +49,13 @@ const ShopGrid = () => {
             name: "Sed do eiusmod",
             variant: ["#ff5722", "#00bcd4", "#795548"],
             price: 40.00,
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sequi fugit reprehenderit repellat ullam accusamus placeat, ipsa quam impedit commodi, eaque harum id.",
             cutPrice: 60.00,
         },
     ];
     return (
         <>
-            <ShopHero title="Shop Grid Default" />
+            <ShopHero title="Shop List" />
 
             <div className='bg-white flex items-center justify-between w-[60%] m-auto mt-40'>
                 <div>
@@ -75,19 +80,19 @@ const ShopGrid = () => {
                 </div>
             </div>
 
-            <div className='bg-white flex flex-wrap items-center justify-between gap-10 w-[60%] m-auto mt-40'>
+            <div className='bg-white w-[60%] m-auto mt-40'>
                 {productList.map((item, index) => (
-                    <Link href={item.link} passHref key={index} className='bg-gray-00 flex flex-col items-center w-60 h-70 '>
+                    <Link href={item.link} passHref key={index} className='bg-gray-00 flex items-center gap-5 h-70 p-5 my-5 shadow-sm hover:shadow-md'>
                         <Image
                             src={item.image}
                             alt={'Product'}
                             width={500}
                             height={500}
-                            className='w-30 h-30 object-cover bg-gray-100 p-8'
+                            className='h-60 object-cover bg-gray-100 p-8'
                         />
-                        <div className='text-center flex flex-col gap-2 pt-3'>
+                        <div className='flex flex-col gap-2 pt-3'>
                             <h2 className=' text-xl text-navyBlue font-extrabold'>{item.name}</h2>
-                            <div className='flex justify-center gap-2'>
+                            <div className='flex gap-2'>
                                 {item.variant.map((color, colorIndex) => (
                                     <div
                                         key={colorIndex}
@@ -100,6 +105,7 @@ const ShopGrid = () => {
                                 ${item.price.toFixed(2)}{' '}
                                 <span className='line-through text-[#FB2E86]'>${item.cutPrice.toFixed(2)}</span>
                             </p>
+                            <p className='text-gray-400'>{item.description}</p>
                         </div>
                     </Link>
                 ))}
@@ -109,4 +115,4 @@ const ShopGrid = () => {
     )
 }
 
-export default ShopGrid
+export default ShopList

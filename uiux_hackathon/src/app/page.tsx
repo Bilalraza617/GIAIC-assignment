@@ -1,3 +1,4 @@
+import Baner from "@/components/Baner";
 import LatestBlog from "@/components/LatestBlog";
 import LatestProduct from "@/components/LatestProduct";
 import ProductCard from "@/components/ProductCard";
@@ -48,6 +49,7 @@ export default function Home() {
       <LatestProduct />
       <Shopex />
       <LatestBlog />
+      <Baner />
     </div>
   );
 }

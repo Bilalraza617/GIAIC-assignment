@@ -24,7 +24,7 @@ const Header = () => {
             <Link href="#">Pages</Link>
           </li>
           <li>
-            <Link href="/shopgrid">Products</Link>
+            <Link href="/shop-grid">Products</Link>
           </li>
           <li>
             <Link href="#">Blog</Link>

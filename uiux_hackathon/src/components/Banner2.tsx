@@ -1,5 +1,5 @@
 import React from "react";
-import Components from "./components";
+import Component from "./Component";
 
 const Banner2 = () => (
   <div className=" min-h-screen ">
@@ -11,7 +11,7 @@ const Banner2 = () => (
         Shop Now
       </button>
     </div>
-    <Components />
+    <Component />
   </div>
 );
 

@@ -14,8 +14,8 @@ const Header = () => {
               <Image
                 src="/arrow.png"
                 className="text-[#FB2E86]"
-                width={10}
-                height={10}
+                width={30}
+                height={30}
                 alt="img"
               />
             </Link>
@@ -41,9 +41,9 @@ const Header = () => {
         <input type="text" className="py-2 border mr-2" />
         <Image
           src="/search.png"
-          width={20}
-          height={20}
-          className=" w-6 bg-[#FB2E86] h-6 "
+          width={40}
+          height={40}
+          className=" w-6 bg-[#FB2E86] h-6 mr-2"
           alt="search"
         />
       </div>

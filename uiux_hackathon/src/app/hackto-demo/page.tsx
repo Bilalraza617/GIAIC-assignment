@@ -5,7 +5,6 @@ const Checkout = () => (
   <div className="container mx-auto p-4">
     <h1 className="text-3xl font-bold mb-4">Hekto Demo</h1>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      {/* Contact Information Section */}
       <div>
         <h2 className="text-2xl font-semibold mb-4">Contact Information</h2>
         <form>
@@ -92,7 +91,6 @@ const Checkout = () => (
                 className="w-full p-2 border border-gray-300 rounded mt-1 focus:outline-none"
               >
                 <option value="Bangladesh">Bangladesh</option>
-                {/* Add other countries as needed */}
               </select>
             </div>
             <div>
@@ -112,7 +110,6 @@ const Checkout = () => (
         </form>
       </div>
 
-      {/* Cart Summary Section */}
       <div>
         <h2 className="text-2xl font-semibold mb-4">Your Cart</h2>
         <ul className="mb-4">
@@ -127,7 +124,6 @@ const Checkout = () => (
             <span className="text-gray-700">Comfort Handy Craft</span>
             <span className="text-gray-700">$120.00</span>
           </li>
-          {/* Add other products as needed */}
         </ul>
         <div className="border-t border-gray-300 pt-4">
           <div className="flex justify-between mb-2">

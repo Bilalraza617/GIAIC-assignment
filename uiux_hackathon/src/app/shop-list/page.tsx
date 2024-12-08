@@ -8,14 +8,13 @@ const ShopList = () => {
     const productList = [
         {
             link: "#",
-            image: "/1.png", // Provide the actual image path
+            image: "/1.png",
             name: "Vel elit euismod",
             variant: ["#4e4e4e", "#fb2e86", "#f8fb2e"],
             price: 25.00,
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sequi fugit reprehenderit repellat ullam accusamus placeat, ipsa quam impedit commodi, eaque harum id.",
             cutPrice: 45.00,
         },
-        // Add more products to test the wrapping
         {
             link: "#",
             image: "/1.png",
@@ -91,21 +90,26 @@ const ShopList = () => {
                             className='h-60 object-cover bg-gray-100 p-8'
                         />
                         <div className='flex flex-col gap-2 pt-3'>
-                            <h2 className=' text-xl text-navyBlue font-extrabold'>{item.name}</h2>
-                            <div className='flex gap-2'>
-                                {item.variant.map((color, colorIndex) => (
-                                    <div
-                                        key={colorIndex}
-                                        style={{ backgroundColor: color }}
-                                        className='h-3 w-3 rounded-full'
-                                    ></div>
-                                ))}
+                            <div className="flex justify-between items-center max-w-xs">
+                                <h2 className=' text-xl text-navyBlue font-extrabold'>{item.name}</h2>
+                                <div className='flex gap-2'>
+                                    {item.variant.map((color, colorIndex) => (
+                                        <div
+                                            key={colorIndex}
+                                            style={{ backgroundColor: color }}
+                                            className='h-3 w-3 rounded-full'
+                                        ></div>
+                                    ))}
+                                </div>
                             </div>
                             <p className='text-navyBlue'>
                                 ${item.price.toFixed(2)}{' '}
                                 <span className='line-through text-[#FB2E86]'>${item.cutPrice.toFixed(2)}</span>
                             </p>
                             <p className='text-gray-400'>{item.description}</p>
+                            <div className="flex gap-5">
+                                <IconZoomCancel />
+                            </div>
                         </div>
                     </Link>
                 ))}

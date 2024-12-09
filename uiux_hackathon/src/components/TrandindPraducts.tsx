@@ -23,20 +23,25 @@ const executiveSeats = [
 const Trandingproducts = () => (
   <div className="container mx-auto p-4">
     <h1 className="text-3xl font-bold mb-4">Trending Products</h1>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div className="flex items-center justify-between gap-3 w-[90%] m-auto">
       {trendingProducts.map((product, index) => (
-        <div key={index} className="p-4 bg-white rounded shadow-lg">
+        <div
+          key={index}
+          className="px-6 bg-white w-[400px] h-[300px] rounded flex flex-col items-center shadow-lg"
+        >
           <Image
             src={`/${product.image}.png`}
             alt="img"
-            className="w-full h-48 object-cover mb-4"
+            className="w-[200px] h-[200px]  mb-4"
             width={300}
             height={300}
           />
-          <h3 className="text-lg font-medium">Cantilever chair</h3>
-          <div className="flex justify-between items-center mt-2">
-            <span className="text-red-500">$$26.00 </span>
-            <span className="line-through text-gray-500">$$42.00</span>
+          <div className="flex flex-col justify-between w-full">
+            <h3 className="text-lg font-medium">Cantilever chair</h3>
+            <div className="flex justify-between items-center mt-2">
+              <span className="text-red-500">$$26.00 </span>
+              <span className="line-through text-gray-500">$$42.00</span>
+            </div>
           </div>
           {/* <div className="mt-2 text-gray-500">
             Discount: {product.discount}%

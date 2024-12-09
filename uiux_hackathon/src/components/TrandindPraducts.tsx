@@ -16,7 +16,7 @@ const executiveSeats = [
     image: "TPB2",
   },
   {
-    image: "TPB3",
+    image: "L6",
   },
 ];
 

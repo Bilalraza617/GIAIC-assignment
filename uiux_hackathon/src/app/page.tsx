@@ -14,12 +14,12 @@ export default function Home() {
     <div>
       <div className="bg-[#F2F0FF] flex relative h-[764px]">
         <div className="flex items-center">
-          <div className=" w-[50%] h-full flex justify-end items-start ">
+          <div className=" w-[40%] h-full flex justify-end items-start ">
             <Image
               src="/light.png"
               alt="img"
-              width={300}
-              height={300}
+              width={400}
+              height={400}
               className="translate-x-20 "
             />
           </div>
@@ -47,13 +47,13 @@ export default function Home() {
                 width={500}
                 height={500}
                 alt="img"
-                className=""
+                className="w-[706px]"
               />
             </div>
           </div>
         </div>
         <div className="absolute  top-[92%] flex items-center gap-2 left-[50%]">
-          <span className="border border-pink-500 w-2 h-2 rotate-45 bg-pink-500 border"></span>
+          <span className=" border-pink-500 w-2 h-2 rotate-45 bg-pink-500 border"></span>
           <span className="border border-pink-500 w-2 h-2 rotate-45"></span>
           <span className="border border-pink-500 w-2 h-2 rotate-45"></span>
         </div>

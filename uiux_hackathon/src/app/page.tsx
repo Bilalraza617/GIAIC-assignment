@@ -12,9 +12,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      <div className="bg-[#F2F0FF] flex">
-        <div className="text-right">
-          <Image src="/light.png" alt="img" width={300} height={300} />
+      <div className="bg-[#F2F0FF] flex h-">
+        <div className="text-right absolute">
+          <Image src="/light.png" alt="img" width={400} height={400} />
         </div>
         <div className="flex justify-between items-center max-w-6xl mx-auto px-6 py-12">
           <div className="max-w-md">
@@ -33,7 +33,7 @@ export default function Home() {
             </button>
           </div>
 
-          <div className="relative">
+          <div className="">
             <Image
               src="/sofa.png"
               width={500}

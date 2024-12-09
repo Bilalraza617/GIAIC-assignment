@@ -8,16 +8,10 @@ const Header = () => {
       <div className="flex gap-10">
         <h1 className="font-bold text-3xl">Hekto</h1>
         <ul className="flex items-center gap-7">
-          <li className="text-[#FB2E86] items-center">
+          <li className="text-pinkDefault items-center">
             <Link href="#" className="flex items-center gap-1">
               Home
-              <Image
-                src="/arrow.png"
-                className="text-[#FB2E86]"
-                width={30}
-                height={30}
-                alt="img"
-              />
+              <Image src="/arrow.png" width={500} height={500} alt="img" className="w-6 object-cover text-pinkDefault" />
             </Link>
           </li>
           <li>

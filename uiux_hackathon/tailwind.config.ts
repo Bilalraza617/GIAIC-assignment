@@ -11,7 +11,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        navyBlue: "#101750"
+        navyBlue: "#101750",
+        pinkDefault: "#FB2E86",
       },
     },
   },

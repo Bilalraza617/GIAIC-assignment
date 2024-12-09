@@ -84,7 +84,7 @@ const ShopList = () => {
           <div>
             <span>View:</span> <input type="text" />
           </div>
-        </div>{" "}
+        </div>
       </div>
 
       <div className="bg-white w-[60%] m-auto mt-40">

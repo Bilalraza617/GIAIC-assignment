@@ -7,7 +7,7 @@ const ShopGrid = () => {
     <>
       <ShopHero title="Shop Grid Default" />
 
-      <div className="bg-white flex items-center justify-between w-[60%] m-auto mt-40">
+      <div className="bg-white flex items-center justify-between w-[1121px] m-auto mt-40">
         <div>
           <h2 className="text-xl text-navyBlue font-bold">
             Ecommerce Acceories & Fashion Items

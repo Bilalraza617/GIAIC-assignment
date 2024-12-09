@@ -105,7 +105,7 @@ const productList = [
 
 const ProductGrid = () => {
   return (
-    <div className="bg-white flex flex-wrap items-center justify-between gap-10 w-[60%] m-auto mt-40">
+    <div className="bg-white flex flex-wrap items-center justify-between gap-10 w-[1121px] m-auto mt-40">
       {productList.map((item, index) => (
         <Link
           href={item.link}

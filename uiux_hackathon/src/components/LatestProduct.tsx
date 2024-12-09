@@ -28,7 +28,7 @@ const LatestProducts = () => (
     <div className="p-4 flex flex-wrap gap-5 justify-between">
       {item.map((data: { image: string }, index) => (
         <div key={index}>
-          <div className="relative w-[300px] h-60">
+          <div className="w-[300px] h-60 my-5">
             <div className="relative w-30 h-30 max-h-30 bg-gray-100">
               <span className="absolute top-0 left-0 bg-blue-500 text-white px-2 py-1 text-xs">
                 Sale
@@ -42,10 +42,12 @@ const LatestProducts = () => (
               />
             </div>
           </div>
-          <h3 className="mt-2 text-lg font-medium">{ }</h3>
-          <div className="flex items-center justify-between mt-1">
-            <span className="text-red-500">$$42.00</span>
-            <span className="line-through text-gray-500">$$65.00</span>
+          <div className="flex justify-between items-center mt-3">
+            <h3 className="mt-2 text-lg font-medium">Sofa</h3>
+            <div className="flex items-center gap-2">
+              <span className="text-red-500">$$42.00</span>
+              <span className="line-through text-gray-500">$$65.00</span>
+            </div>
           </div>
         </div>
       ))}

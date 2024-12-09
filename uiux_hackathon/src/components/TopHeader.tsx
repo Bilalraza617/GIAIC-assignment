@@ -20,30 +20,30 @@ const TopHeader = () => {
           <li>
             <Link href="#" className="flex items-center gap-1">
               English
-              <Image src="/arrow.png" width={40} height={40} alt="img" />
+              <Image src="/arrow.png" width={500} height={500} alt="img" className="w-6 object-cover" />
             </Link>
           </li>
           <li>
             <Link href="#" className="flex items-center gap-1">
               USD
-              <Image src="/arrow.png" width={40} height={40} alt="img" />
+              <Image src="/arrow.png" width={500} height={500} alt="img" className="w-6 object-cover" />
             </Link>
           </li>
           <li>
             <Link href="#" className="flex items-center gap-1">
               Login
-              <Image src="/arrow.png" width={40} height={40} alt="img" />
+              <Image src="/arrow.png" width={500} height={500} alt="img" className="w-6 object-cover" />
             </Link>
           </li>
           <li>
             <Link href="#" className="flex items-center gap-1">
               Wishlist
-              <Image src="/heart.png" width={40} height={40} alt="img" />
+              <Image src="/arrow.png" width={500} height={500} alt="img" className="w-6 object-cover" />
             </Link>
           </li>
           <li>
             <Link href="#" className="flex items-center gap-3">
-              <Image src="/card.png" width={34} height={34} alt="img" />
+              <Image src="/arrow.png" width={500} height={500} alt="img" className="w-6 object-cover" />
             </Link>
           </li>
         </ul>

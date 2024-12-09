@@ -2,10 +2,10 @@ import Image from "next/image";
 import React from "react";
 
 const categories = [
-  { image: "TC1" },
-  { image: "TC2" },
-  { image: "TC3" },
-  { image: "TC4" },
+  { image: "T1" },
+  { image: "T2" },
+  { image: "T3" },
+  { image: "T4" },
 ];
 
 const TopCategories = () => (

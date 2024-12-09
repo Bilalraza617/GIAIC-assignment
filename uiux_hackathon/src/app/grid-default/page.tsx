@@ -130,13 +130,13 @@ const ShopGrid = () => {
         ))}
       </div>
       <div className="bg-white flex items-center justify-center w-[60%] m-auto py-10">
-        {/* <Image
+        <Image
           src="/H1.png"
           alt="brands"
           width={500}
           height={500}
           className="w-[80%] object-cover"
-        /> */}
+        />
         <Banner2 />
       </div>
     </>

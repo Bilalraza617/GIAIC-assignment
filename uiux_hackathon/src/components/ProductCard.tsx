@@ -19,12 +19,12 @@ const ProductCard = () => {
   return (
     <div className="my-32 w-[60%] m-auto">
       <h1 className="text-5xl text-navyBlue text-center font-extrabold">Featured Products</h1>
-      <div className="flex gap-10 just my-10">
+      <div className="flex justify-between my-10">
         {item.map((data: { image: string }, index) => {
           return (
             <div key={index}>
-              <div>
-                <div className="relative w-30 h-30 max-h-30">
+              <div className="shadow-lg flex flex-col items-center w-60 h-70">
+                <div className="relative w-30 h-30 max-h-30 bg-gray-100">
                   <Image
                     // src={"/" + data.image + "png"}
                     src={`/${data.image}.png`}
@@ -38,7 +38,7 @@ const ProductCard = () => {
                   </button> */}
                 </div>
                 <div>
-                  <div className="details mt-4 flex flex-col justify-center items-center gap-1">
+                  <div className="details my-4 flex flex-col justify-center items-center gap-1">
                     <h3 className="text-xl font-bold text-pinkDefault">Cantilever chair</h3>
                     <p className="text-gray-600">Code - Y523201</p>
                     <div className="flex items-center justify-center gap-2">

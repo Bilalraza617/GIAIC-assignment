@@ -1,49 +1,51 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { FaRegEnvelope, FaRegHeart } from "react-icons/fa";
+import { FiPhoneCall } from "react-icons/fi";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { PiShoppingCartSimpleLight } from "react-icons/pi";
 
 const TopHeader = () => {
   return (
-    <div className="flex justify-center gap-32 items-center h-11  bg-[#7E33E0] text-white">
+    <div className="flex justify-center gap-32 items-center  h-11  bg-[#7E33E0] text-white">
       <div className="flex items-center  w-[60%]">
         <div className="flex items-center  w-[60%]">
           <div className="flex items-center gap-3 mr-7">
-            <Image src="/lifafa.png" width={20} height={20} alt="logo" />
-            <span>mhh.jawaid.ali@gmail.com</span>
+            <FaRegEnvelope />
+            <h3 className="text-sm">mhh.jawaid.ali@gmail.com</h3>
           </div>
           <div className="flex items-center gap-3">
-            <Image src="/phone.png" width={20} height={20} alt="logo" />
-            <span>(12345) 67890</span>
+            <FiPhoneCall /> <h3 className="font-thin">(12345) 67890</h3>
           </div>
         </div>
-        <ul className="flex space-x-4">
-          <li>
-            <Link href="#" className="flex items-center gap-1">
+        <ul className=" space-x-4 hidden md:flex">
+          <li className="">
+            <Link href="#" className="flex items-center gap-1 text-sm">
               English
-              <Image src="/arrow.png" width={40} height={40} alt="img" />
+              <MdOutlineKeyboardArrowDown />{" "}
             </Link>
           </li>
           <li>
-            <Link href="#" className="flex items-center gap-1">
+            <Link href="#" className="flex items-center gap-1 text-sm">
               USD
-              <Image src="/arrow.png" width={40} height={40} alt="img" />
+              <MdOutlineKeyboardArrowDown />{" "}
             </Link>
           </li>
           <li>
-            <Link href="#" className="flex items-center gap-1">
+            <Link href="#" className="flex items-center gap-1 text-sm">
               Login
-              <Image src="/arrow.png" width={40} height={40} alt="img" />
+              <MdOutlineKeyboardArrowDown />
             </Link>
           </li>
           <li>
-            <Link href="#" className="flex items-center gap-1">
+            <Link href="#" className="flex items-center gap-1 text-sm">
               Wishlist
-              <Image src="/heart.png" width={40} height={40} alt="img" />
+              <FaRegHeart />{" "}
             </Link>
           </li>
           <li>
             <Link href="#" className="flex items-center gap-3">
-              <Image src="/card.png" width={34} height={34} alt="img" />
+              <PiShoppingCartSimpleLight />
             </Link>
           </li>
         </ul>

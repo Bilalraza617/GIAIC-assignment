@@ -22,30 +22,43 @@ const TopHeader = () => {
           <li className="">
             <Link href="#" className="flex items-center gap-1 text-sm">
               English
-              <MdOutlineKeyboardArrowDown />{" "}
+
+             
+
+              <MdOutlineKeyboardArrowDown />
             </Link>
           </li>
           <li>
             <Link href="#" className="flex items-center gap-1 text-sm">
               USD
+
+             
+
               <MdOutlineKeyboardArrowDown />{" "}
             </Link>
           </li>
           <li>
             <Link href="#" className="flex items-center gap-1 text-sm">
               Login
+
+             
               <MdOutlineKeyboardArrowDown />
             </Link>
           </li>
           <li>
             <Link href="#" className="flex items-center gap-1 text-sm">
               Wishlist
-              <FaRegHeart />{" "}
+
+              
+
+              <FaRegHeart />
             </Link>
           </li>
           <li>
             <Link href="#" className="flex items-center gap-3">
+             
               <PiShoppingCartSimpleLight />
+
             </Link>
           </li>
         </ul>
